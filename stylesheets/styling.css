@@ -8,23 +8,22 @@ body {
     font-family: 'Montserrat', sans-serif;
     color: #0072CA;
 }
-article li {
+#skills li {
     text-decoration: none;
     display: inline-block;
     padding: 20px 15px;
     margin: 5px 5px;
     font-size: 20px;
     text-align: center;
-    color: #c1c1c1;
+    color: black;
     font-weight: bold;
     transition: color 0.3s linear;
     -webkit-transition: color 0.3s linear;
     -moz-transition: color 0.3s linear;
 }
-article ul {
+#skills {
     list-style-type: none;
-    padding-left: 5px;
-    padding-right: 5px;
+   padding: 0;
 }
 /* Start of Navbar */
 
@@ -84,6 +83,31 @@ nav ul {
     -webkit-transition: background-color 700ms linear;
     transition: background-color 700ms linear;
 }
+#myworknavbar nav li:nth-child(2) {
+    display: inline-block;
+    font-size: 20px;
+}
+#myworknavbar nav li:nth-child(5) {
+    display: inline-block;
+    font-size: 20px;
+}
+#myworknavbar nav li:nth-child(3) {
+    display: inline-block;
+    font-size: 20px;
+}
+#myworknavbar nav li:nth-child(4) {
+    display: inline-block;
+    font-size: 20px;
+}
+
+#myworknavbar > nav > ul {
+    margin: 0;
+    overflow: hidden;
+    top: 0;
+    background-color: #0072CA;
+    position: fixed;
+    width: 100%;
+}
 nav ul.scrolled {
     background-color: #0072CA;
 }
@@ -97,16 +121,16 @@ nav ul.scrolled {
     font-family: 'Montserrat', sans-serif;
     font-weight: bolder;
     text-shadow: 3px 3px 3px black;
-    margin: 0;
+    margin-top: 0;
 }
 #headerimage {
-    background: url("../images/landingimage.JPG") no-repeat center fixed;
+    background: url("../images/melondon.jpg") no-repeat center fixed;
     height: 800px;
     background-size: cover;
     margin: 0;
+    padding-top: 300px;
 }
 #downarrow {
-    display: block;
     margin-left: auto;
     margin-right: auto;
     width: 60px;
@@ -153,17 +177,205 @@ nav ul.scrolled {
     border-radius: 50px;
 }
 p {
-    color: #adadad;
+    color: black;
 }
 .skill {
-    border: solid 2px;
-    padding-top: 10px;
-    padding-bottom: 200px;
-    border-radius: 20px;
+    border: solid 1px black;
+    height: 100%;
+    width: 100%;
+    border-top: none;
 }
 #me{
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    margin-top: 120px;
 }
+#footertext {
+    font-size: 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    background-color: #0072CA;
+}
+#footertext > .wrapper > a {
+ color: white;
+}
+#footertext > .wrapper > a:hover {
+    color: #dddddd;
+    cursor: pointer;
+}
+footer > .wrapper > a > img {
+    padding: 7px 10px 2px 13px;
+}
+.border > i {
+    height: 12px;
+    width: 12px;
+    display: inline-block;
+    background-color: #ff5f57;
+    border-radius: 50%;
+    margin-left: 5px;
+    margin-top: 5px;
+    left: 10px;
+    float: left;
+}
+.border > i:nth-child(2) {
+    background-color: #ffbd2e;
+}
+.border > i:nth-child(3) {
+    background-color: #28ca41;
+}
+.border {
+    border: solid 1px black;
+    background-color: #ededed;
+    color: black;
+    font-size: 20px;
+    text-align: right;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    width: 100%;
+
+}
+.wrapper > .myworktext {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wrapper > .myworkimages {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.skill:hover {
+    opacity: 0.2;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+.skillstext {
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 80px;
+    color: white;
+    display: none;
+    text-decoration: none;
+    font-size: 20px;
+    background-color: #0072CA;
+}
+li {
+    display: inline-block;
+}
+button > a {
+    color: white;
+    text-decoration: none;
+}
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+#nav-icon4 {
+    width: 60px;
+    height: 45px;
+    position: fixed;
+    margin: 10px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+    border: solid 2px black;
+    border-radius: 50%;
+    background-color: black;
+    bottom: 0px;
+    right: 0px;
+
+}
+#nav-icon4 span {
+    margin-top: 7px;
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 40px;
+    margin-left: 10px;
+    background: #0072CA;
+    border-radius: 9px;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+#nav-icon4 span:nth-child(1) {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(2) {
+    top: 12px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4 span:nth-child(3) {
+    top: 24px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+}
+
+#nav-icon4.open span:nth-child(1) {
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    transform: rotate(50deg);
+    top: -3px;
+    left: 8px;
+}
+
+#nav-icon4.open span:nth-child(2) {
+    width: 0%;
+    opacity: 0;
+}
+#nav-icon4.open span:nth-child(3) {
+    -webkit-transform: rotate(-50deg);
+    -moz-transform: rotate(-50deg);
+    -o-transform: rotate(-50deg);
+    transform: rotate(-50deg);
+    top: 27px;
+    left: 8px;
+}
+#nav-icon4.active {
+    background-color: #0072CA;
+}
+#menu {
+    background-color: #0072CA;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: none;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    line-height: 200px;
+}
+.text {
+    word-spacing: 10px;
+    color: white;
+ }

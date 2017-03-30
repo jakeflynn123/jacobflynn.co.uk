@@ -8,31 +8,43 @@
     <link rel="stylesheet" href="stylesheets/gridsystem.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,700,900" rel="stylesheet">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <title>Jacob Flynn</title>
+    <title>Jacob Flynn | Home</title>
 </head>
 <body>
+<div id="menu">
+    <ul>
+        <li class="small-12"><a>Contact Me</a></li>
+        <li class="small-12"><a>About</a></li>
+        <li class="small-12"><a>My Work</a></li>
+    </ul>
+</div>
 <header>
-        <nav>
-            <ul>
-                <li><a>Jacob Flynn.</a></li>
-                <li><a>About Me</a></li>
-                <li><a>My Work</a></li>
-                <li><a>Contact Me</a></li>
+    <nav>
+        <ul>
+            <li class="small-hidden"><a>Jacob Flynn.</a></li>
+            <li class="small-hidden"><a>About Me</a></li>
+            <li class="small-hidden"><a>My Work</a></li>
+            <li class="small-hidden"><a>Contact Me</a></li>
             </ul>
         </nav>
+    <div class="large-hidden small-12" id="nav-icon4">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 </header>
-<main onscroll="scroll()">
+<main>
     <section id="headerimage">
         <article class="wrapper group">
-            <img id="me" src="images/me.jpg" width="50px" height="50px">
             <h1 id="LandingPageText">Hello world, my name is Jacob <br>and I design and create <br>
                 <span id="thingsido"></span></h1>
-            <img id="downarrow" src="images/arrow-down.png">
+            <img class="small-hidden" id="downarrow" src="images/arrow-down.png">
         </article>
     </section>
 
     <section id="jumper" class="contentBanner">
-        <article class="wrapper group">
+        <article class="wrapper">
+            <img id="me" src="images/me.jpg">
             <h1>About Me</h1>
             <p>Im a Web Developer from Liverpool</p>
         </article>
@@ -42,25 +54,25 @@
     </section>
 
     <section class="contentBanner">
-        <article class="wrapper group">
+        <article class="wrapper">
             <h1>My Work</h1>
             <ul id="skills">
                 <li id="showall">SHOW ALL</li>
                 <li id="laravel">LARAVEL</li>
                 <li id="javascript">JAVASCRIPT</li>
                 <li id="sass">SASS</li>
-                <li id="website">WEBSITE</li>
                 <li id="mysql">MYSQL</li>
                 <li id="jquery">JQUERY</li>
                 <li id="php">PHP</li>
-                <li id="server">SERVER HOSTING</li>
                 <li id="apache">APACHE</li>
             </ul>
         </article>
-        <article class="wrapper group">
-            <p id="seetheuniverse" class="skill column small-6 large-4">Example</p>
-            <p class="skill column small-6 large-4">Example 2</p>
-            <p class="skill column small-6 large-4">Example 3</p>
+        <article class="wrapper">
+                <div class="column small-12 large-4"><div class="border"><i></i><i></i><i></i>See The Universe</div><a href="seetheuniverse.html"><button class="skillstext"><a href="seetheuniverse.html"> Click to View</a></button></a><img id="seetheuniverse" class="skill" src="seetheuniversepage.png"></div>
+                <div class="column small-12 large-4"><div class="border"><i></i><i></i><i></i>CleverSteam CRM</div><button class="skillstext"><a href=""> Click to View</a></button><img class="skill" src="images/cleversteam.png"></div>
+                <div class="column small-12 large-4"><div class="border"><i></i><i></i><i></i>Look Amazing</div><button class="skillstext"><a href=""> Click to View</a></button><img class="skill" src="images/lookamazing.png"></div>
+                <div class="column small-12 large-4"><div class="border"><i></i><i></i><i></i>React Project</div><button class="skillstext"><a href=""> Click to View</a></button><img class="skill" src="seetheuniversepage.png"></div>
+                <div class="column small-12 large-4"><div class="border"><i></i><i></i><i></i>Ruby on Rails</div><button class="skillstext"><a href=""> Click to View</a></button><img class="skill" src="seetheuniversepage.png"></div>
         </article>
     </section>
 
@@ -69,7 +81,7 @@
 
     <section class="contentBanner">
         <article class="wrapper">
-            <h1>My Work</h1>
+            <h1>Qualifications</h1>
         </article>
     </section>
 
@@ -78,18 +90,19 @@
 
     <section class="contentBanner">
         <article class="wrapper">
-            <h1>My Work</h1>
+            <h1>Contact Me</h1>
+            <p>Get In Touch</p>
         </article>
     </section>
 
     <section id="anfield">
     </section>
 
-    <section class="contentBanner">
-        <article class="wrapper">
-            <h1>My Work</h1>
-        </article>
-    </section>
+    <footer id="footertext">
+        <section class="wrapper">All content copyright Jacob Flynn &copy; 2017 &bull; All rights reserved. &bull; <a href="contactme">Need a website building?</a> </section>
+        <section class="wrapper"><a href="https://twitter.com/flynnjf_"><img src="images/twitter.png" ></a><a href="https://www.linkedin.com/in/jacob-flynn-b20955b0/"><img src="images/linkedin.png"></a><a href="mailto:jakeflynn.yt@gmail.com?Subject=I%20Need%20A%20Website%20Building" target="_top"><img src="images/email.png"></a></section>
+        <p class=" wrapper text">Twitter Linkedin Email</p>
+    </footer>
 </main>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="scripts/wordChange.js"></script>
